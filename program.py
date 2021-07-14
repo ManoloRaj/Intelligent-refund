@@ -8,7 +8,7 @@ class Money:
         return price-money 
     
     def compute(self, total):
-        totale - self.list_of_money[:]
+        total - self.list_of_money[:]
         return total
 
 
