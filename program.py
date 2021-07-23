@@ -25,5 +25,7 @@ class Money:
 if __name__ == "__main__":
     money = Money()
     print(money.getRestOfMoney(700, 67))
+    
+    print(money.computeIntelligentRest(money.getRestOfMoney(700, 67)))
 
 
