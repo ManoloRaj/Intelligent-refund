@@ -29,6 +29,17 @@ class Money:
     def getSpacies(self):
         return self.spacies
 
+    def result(self):
+
+        for i in range(len(self.spacies) - 1):
+            for j in range(len(self.list_of_money) - 1):
+                if (len(str(self.spacies[i+1]))==len(str(self.list_of_money[j+1]))):
+                    print(" You need :"+str(self.list_of_money[i+1])+" number of "+str(self.spacies[i+1] / self.list_of_money[i+1])+" Ariary \n")
+
+            else :
+                pass
+
+                
 if __name__ == "__main__":
     money = Money()
 
@@ -36,4 +47,4 @@ if __name__ == "__main__":
     money.computeIntelligentRest()
 
     print(money.getSpacies())
-    
+    money.result()
