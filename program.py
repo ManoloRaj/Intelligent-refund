@@ -12,13 +12,20 @@ class Money:
         return money-price 
     
     def computeIntelligentRest(self, money):
-        money = []
-        for count in range(1,len(self.list_of_money)):
-            money = total - self.list_of_money[count]
-            if money % self.list_of_money[count] == 0
-                self.refund = self.refund + self.list_of_money[count]
-            else :
-                continue
+        money = str(money)
+        print (len(money))
+        print (money[0])
+        
+        #decompose the money into simple decimal number
+        
+        dec_mon = []
+        for j in range(len(money)):
+            temp_var = money[j]
+            for i in range(len(money)-j-1):
+                temp_var = temp_var + "0"
+
+            dec_mon.append(temp_var)
+        printdec
         return money
 
 
