@@ -25,7 +25,7 @@ class Money:
                 temp_var = temp_var + "0"
 
             dec_mon.append(temp_var)
-        printdec
+        print (dec_mon)
         return money
 
 
