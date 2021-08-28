@@ -6,16 +6,14 @@ class Money:
         
         #Initialise refun to 0
         self.refund = 0
-        
+        self.spacies = []
+
     def getRestOfMoney(self, money, price) :
         self.refund = price-money
-        return money-price 
+         
     
-    def computeIntelligentRest(self, money):
-        money = str(money)
-        print (len(money))
-        print (money[0])
-        
+    def computeIntelligentRest(self):
+        money = str(self.refund)
         #decompose the money into simple decimal number
         
         dec_mon = []
@@ -25,14 +23,16 @@ class Money:
                 temp_var = temp_var + "0"
 
             dec_mon.append(temp_var)
-        print (dec_mon)
-        return money
 
+        self.spacies = dec_mon
+
+    def getSpacies(self):
+        return self.spacies
 
 if __name__ == "__main__":
     money = Money()
-    print(money.getRestOfMoney(700, 67))
+    money.getRestOfMoney(700, 62)
+    money.computeIntelligentRest()
     
-    print(money.computeIntelligentRest(money.getRestOfMoney(700, 67)))
-
-
+    print(money.getSpacies())
+    
