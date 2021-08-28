@@ -22,7 +22,7 @@ class Money:
             for i in range(len(money)-j-1):
                 temp_var = temp_var + "0"
 
-            dec_mon.append(temp_var)
+            dec_mon.append(int(temp_var))
 
         self.spacies = dec_mon
 
@@ -31,8 +31,9 @@ class Money:
 
 if __name__ == "__main__":
     money = Money()
-    money.getRestOfMoney(700, 62)
+
+    money.getRestOfMoney(9000, 62)
     money.computeIntelligentRest()
-    
+
     print(money.getSpacies())
     
