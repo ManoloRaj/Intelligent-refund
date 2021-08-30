@@ -42,10 +42,14 @@ class Money:
 
                 
 if __name__ == "__main__":
+    #Create money object
     money = Money()
 
+    #Compute rest
     money.getRestOfMoney(9000, 62)
+    #Compute intelligent rest
     money.computeIntelligentRest()
 
+    #print result
     print(money.getSpacies())
     money.result()
