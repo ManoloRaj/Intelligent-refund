@@ -29,6 +29,7 @@ class Money:
     def getSpacies(self):
         return self.spacies
 
+    #Return of number spacies
     def result(self):
 
         for i in range(len(self.spacies) - 1):
