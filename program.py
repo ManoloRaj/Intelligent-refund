@@ -1,5 +1,5 @@
 #Author : ManoloRaj
-#14 july 2021
+#14 july-August 2021
 class Money:
     def __init__(self):
         self.list_of_money = [10, 20, 50, 100, 500, 1000, 2000, 5000, 10000, 20000]
